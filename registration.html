@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Festa 2023 | ลงทะเบียน</title>
+    <link rel="stylesheet" href="registration_style.css">
+</head>
+<body>
+    <form class="reg" id="reg" name="reg" action="finish.html">
+        <h1>ข้อมูลการลงทะเบียน</h1>
+        <label for="bname">ชื่อบริษัท:</label>
+            <input type="text" id="bname" name="bname"><br><br>
+        <label for="size">เลือกขนาดบูธ:</label>
+            <select name="size" id="size" required>
+                <option value="none">-</option>
+                <option value="small">10x10</option>
+                <option value="big">10x15</option>
+            </select>
+        <br><br>
+        <label for="table">ต้องการโต๊ะหรือไม่:</label>
+            <input type="checkbox" id="table" name="yes">ต้องการ<br><br>
+        <label for="cnum">จำนวนเก้าอี้:</label>
+            <input type="number" id="cnum" name="cnum"><br><br>
+        <label for="pname">ชื่อผู้ติดต่อ:</label>
+            <input type="text" id="pname" name="pname"><br><br>
+        <label for="phone">เบอร์ผู้ติดต่อ:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+        <input type="submit" value="ยืนยัน" id="finish">
+    </form>
+</body>
+</html>
