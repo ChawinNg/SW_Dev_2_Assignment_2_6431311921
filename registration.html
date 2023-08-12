@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jump Festa 2023 | ลงทะเบียน</title>
     <link rel="stylesheet" href="registration_style.css">
+    <script src="register.js"></script>
 </head>
 <body>
-    <form class="reg" id="reg" name="reg" action="finish.html">
+    <form class="reg" id="reg" name="reg" action="finish.html" onsubmit="return isValid()" method="get">
         <h1>ข้อมูลการลงทะเบียน</h1>
         <label for="bname">ชื่อบริษัท:</label>
             <input type="text" id="bname" name="bname"><br><br>
         <label for="size">เลือกขนาดบูธ:</label>
             <select name="size" id="size" required>
-                <option value="none">-</option>
+                <option value="none" selected>-</option>
                 <option value="small">10x10</option>
                 <option value="big">10x15</option>
             </select>
